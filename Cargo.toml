@@ -1,0 +1,17 @@
+[package]
+name = "delete-duplicate-cli"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+env_logger = "*"
+log = "*"
+walkdir = "*"
+scopeguard = "*"
+sha2 = "*"
+crabrs = { git = "https://github.com/cshu/crabrs" }
+
+[profile.release]
+debug = 1
